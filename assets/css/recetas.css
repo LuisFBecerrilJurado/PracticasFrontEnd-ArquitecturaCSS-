@@ -2,7 +2,6 @@
     background:#e5e5e5;
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 0 5rem;
 }
 
 .receta__box{
@@ -10,9 +9,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
-    margin-right: 5rem;
-    width: calc(25% - 5rem);
-
 }
 
 .receta__imagen{
@@ -41,5 +37,38 @@
     border-radius: 5px;
     color: #fdfdfd;
     padding: 1rem;
+}
+
+@media screen and (min-width:0){
+    .receta{
+        padding: 5rem 0 0 1rem;
+    }
+
+    .receta__box{
+        margin-right: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .receta{
+        padding: 5rem 0 0 2.5rem;
+    }
+
+    .receta__box{
+        margin-right: 2.5rem;
+        width: calc(33% - 2.5rem);
+    }
+}
+
+@media screen and (min-width: 922px) {
+    .receta{
+        padding: 5rem 0 0 5rem;
+    }
+
+    .receta__box{
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
 }
 

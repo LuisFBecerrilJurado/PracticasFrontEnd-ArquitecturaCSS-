@@ -62,3 +62,23 @@
     color: #595959;
     font-size: 1.25rem;
 }
+
+@media screen and (min-width:0){
+    .personas{
+        flex-direction: column;
+    }
+    
+    .persona{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .personas{
+        flex-direction: row;
+    }
+
+    .persona{
+        margin-bottom: 0;
+    }
+}
